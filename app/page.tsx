@@ -37,6 +37,6 @@ export default function Home() {
 
     <section className="section education"><div className="section-label">The toolkit</div><div><h2>Things I know<br/>and keep learning.</h2><div className="skill-cloud light">{resume.skills.map(skill=><span key={skill}>{skill}</span>)}</div><div className="credentials">{resume.certifications.map(cert=><div key={cert}><span>Certified</span><strong>{cert}</strong></div>)}</div></div></section>
 
-    <footer id="contact"><p>Tell me what you’re working on.</p><a href="mailto:ergerica76@gmail.com">Say hello<span> ↗</span></a><div><span>© {new Date().getFullYear()} Erica Ross</span><a href="https://www.linkedin.com/in/erica-r0ss/" target="_blank" rel="noreferrer">LinkedIn</a><span>Made with curiosity</span></div></footer>
+    <footer id="contact"><p>Tell me what you’re working on.</p><a href="https://www.linkedin.com/in/erica-r0ss/" target="_blank" rel="noreferrer">Say hello<span> ↗</span></a><div><span>© {new Date().getFullYear()} Erica Ross</span><a href="https://github.com/ergerica" target="_blank" rel="noreferrer">GitHub</a><span>Made with curiosity</span></div></footer>
   </main>;
 }
