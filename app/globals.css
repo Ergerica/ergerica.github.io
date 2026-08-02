@@ -6,7 +6,7 @@ html { scroll-behavior:smooth; }
 body { margin:0; background:var(--paper); color:var(--ink); font-family:var(--font-geist), Arial, sans-serif; }
 a { color:inherit; text-decoration:none; }
 .site-header { height:84px; display:flex; align-items:center; justify-content:space-between; padding:0 5vw; border-bottom:1px solid var(--line); position:sticky; top:0; z-index:20; background:rgba(255,255,255,.92); backdrop-filter:blur(16px); }
-.brand { font-size:18px; font-weight:850; letter-spacing:-.03em;display:flex;align-items:center;gap:8px}.brand img{width:25px;height:25px;object-fit:contain}
+.brand { font-size:18px; font-weight:850; letter-spacing:-.03em;display:flex;align-items:center;gap:8px}.home-bricks{width:25px;height:25px;display:block;background:var(--coral);-webkit-mask:url('/bricks.png') center/contain no-repeat;mask:url('/bricks.png') center/contain no-repeat}
 nav { display:flex; gap:32px; font:500 13px var(--font-mono); text-transform:uppercase; letter-spacing:.05em; }
 nav a:hover { color:var(--blue); }
 .hero { min-height:calc(100vh - 84px); padding:10vh 8vw 5vh; display:flex; flex-direction:column; justify-content:center; background:radial-gradient(circle at 87% 24%,var(--coral) 0,transparent 32%),linear-gradient(135deg,var(--cream) 0%,var(--paper) 65%); }

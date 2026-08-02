@@ -8,7 +8,7 @@ export default function Home() {
   const base=process.env.PAGES_BASE_PATH??"";
   return <main>
     <header className="site-header">
-      <a className="brand" href="#top" aria-label="Erica Ross home">Home<img src={`${base}/bricks.png`} alt=""/></a>
+      <a className="brand" href="#top" aria-label="Erica Ross home">Home<span className="home-bricks" aria-hidden="true"/></a>
       <nav aria-label="Main navigation"><a href="#about">About</a><a href="#writing">Blog</a><a href="#experience">Résumé</a><a href="#contact">Say hi</a></nav>
     </header>
 
