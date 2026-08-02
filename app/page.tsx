@@ -8,7 +8,7 @@ export default function Home() {
   const base=process.env.PAGES_BASE_PATH??"";
   return <main>
     <header className="site-header">
-      <a className="brand" href="#top" aria-label="Erica Ross home">Home<span>✦</span></a>
+      <a className="brand" href="#top" aria-label="Erica Ross home">Home<img src={`${base}/bricks.png`} alt=""/></a>
       <nav aria-label="Main navigation"><a href="#about">About</a><a href="#writing">Blog</a><a href="#experience">Résumé</a><a href="#contact">Say hi</a></nav>
     </header>
 
@@ -37,6 +37,6 @@ export default function Home() {
 
     <section className="section education"><div className="section-label">The toolkit</div><div><h2>Things I know<br/>and keep learning.</h2><div className="skill-cloud light">{resume.skills.map(skill=><span key={skill}>{skill}</span>)}</div><div className="credentials">{resume.certifications.map(cert=><div key={cert}><span>Certified</span><strong>{cert}</strong></div>)}</div></div></section>
 
-    <footer id="contact"><p>Tell me what you’re working on.</p><a href="https://www.linkedin.com/in/erica-r0ss/" target="_blank" rel="noreferrer">Say hello<span> ↗</span></a><div><span>© {new Date().getFullYear()} Erica Ross</span><a href="https://github.com/ergerica" target="_blank" rel="noreferrer">GitHub</a><span>Made with curiosity</span></div></footer>
+    <footer id="contact"><p>Tell me what you’re working on.</p><a href="https://www.linkedin.com/in/erica-r0ss/" target="_blank" rel="noreferrer">Say hello<span> ↗</span></a><div><span>© {new Date().getFullYear()} Erica Ross</span><a href="https://github.com/ergerica" target="_blank" rel="noreferrer">GitHub</a><span>Made with curiosity</span></div><small className="attribution"><a href="https://www.flaticon.com/free-icons/alphabet" title="alphabet icons" target="_blank" rel="noreferrer">Alphabet icon by Magnific — Flaticon</a><a href="https://www.flaticon.com/free-icons/bricks" title="bricks icons" target="_blank" rel="noreferrer">Bricks icon by Magnific — Flaticon</a></small></footer>
   </main>;
 }

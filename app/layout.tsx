@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://ergerica.github.io"),
   title: "Erica Ross — DevOps & Builder",
   description: "The things Erica Ross is building, learning, and figuring out along the way.",
-  icons: { icon: "/favicon.svg" },
+  icons: { icon: "/letter-e.png", shortcut: "/letter-e.png", apple: "/letter-e.png" },
   openGraph: {
     title: "Erica Ross — DevOps & Builder",
     description: "Things I’m building, learning, and figuring out along the way.",
