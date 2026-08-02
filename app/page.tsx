@@ -1,27 +1,29 @@
 import Link from "next/link";
-import { getContent } from "../lib/content";
+import ReactMarkdown from "react-markdown";
+import { getContent, getHomeContent } from "../lib/content";
 
 export default function Home() {
   const {resume,posts}=getContent();
+  const home=getHomeContent();
   const base=process.env.PAGES_BASE_PATH??"";
   return <main>
     <header className="site-header">
-      <a className="brand" href="#top" aria-label="Erica Ross home">ER<span>✦</span></a>
+      <a className="brand" href="#top" aria-label="Erica Ross home">Home<span>✦</span></a>
       <nav aria-label="Main navigation"><a href="#about">About</a><a href="#writing">Blog</a><a href="#experience">Résumé</a><a href="#contact">Say hi</a></nav>
     </header>
 
     <section className="personal-hero" id="top">
       <div className="hero-words">
-        <p className="eyebrow"><span/>Hello, I’m</p>
-        <h1>Erica<br/>Ross</h1>
-        <div className="roles"><span>DevOps</span><span>Builder</span></div>
+        <p className="eyebrow"><span/>{home.greeting}</p>
+        <h1>{home.name.split(" ").map(part=><span key={part}>{part}<br/></span>)}</h1>
+        <div className="roles">{home.roles.map(role=><span key={role}>{role}</span>)}</div>
       </div>
-      <figure className="profile-frame"><img src={`${base}/images/erica-profile.jpeg`} alt="Erica Ross smiling outside at night"/><figcaption>Always exploring something new ✦</figcaption></figure>
+      <figure className="profile-frame"><img src={`${base}${home.image}`} alt={home.imageAlt}/><figcaption>{home.imageCaption}</figcaption></figure>
     </section>
 
     <section className="hello" id="about">
-      <p className="section-label">A little about me</p>
-      <div><h2>I’m curious about<br/><em>a lot of things.</em></h2><p>{resume.summary}</p><p>I love hearing what other people are working on, and I love creating things myself. Right now I feel like sharing more, so this is where I’ll keep the ideas, projects, and discoveries I pick up along the way.</p></div>
+      <p className="section-label">{home.aboutLabel}</p>
+      <div><h2>{home.aboutTitle}</h2><div className="about-copy"><ReactMarkdown>{home.body}</ReactMarkdown></div></div>
     </section>
 
     <section className="section writing" id="writing">

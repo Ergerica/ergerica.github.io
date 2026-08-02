@@ -2,6 +2,10 @@
 
 This is the source for `https://ergerica.github.io`.
 
+## Update the homepage and About section
+
+Edit `content/home.md`. Its top block controls your name, roles, photo, caption, and About heading. The Markdown below that block becomes the About text.
+
 ## Update the résumé
 
 Edit `content/resume.md`, then commit and push. The résumé information lives in the YAML block between the `---` lines.

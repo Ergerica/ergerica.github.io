@@ -4,6 +4,13 @@ import matter from "gray-matter";
 
 export type Resume = { summary:string; skills:string[]; certifications:string[]; experience:{role:string;company:string;dates:string;highlights:string[]}[] };
 export type Post = { title:string; slug:string; excerpt:string; body:string; publishedAt:string; published:boolean; cover?:string };
+export type HomeContent = { name:string; greeting:string; roles:string[]; image:string; imageAlt:string; imageCaption:string; aboutLabel:string; aboutTitle:string; body:string };
+
+export function getHomeContent():HomeContent {
+  const source=fs.readFileSync(path.join(process.cwd(),"content/home.md"),"utf8");
+  const {data,content}=matter(source);
+  return {...data,body:content.trim()} as HomeContent;
+}
 
 function readResume():Resume {
   const source=fs.readFileSync(path.join(process.cwd(),"content/resume.md"),"utf8");
