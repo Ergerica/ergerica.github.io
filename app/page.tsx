@@ -29,7 +29,7 @@ export default function Home() {
     <section className="section writing" id="writing">
       <div className="section-label">The blog</div>
       <div><div className="writing-heading"><h2>Things I’m<br/>figuring out.</h2><p>Notes from what I’m building, learning, breaking, fixing, and thinking about lately.</p></div>
-        <div className="post-list">{posts.map(post=><Link className="post-card" href={`/blog/${post.slug}`} key={post.slug}><span>{post.publishedAt}</span><h3>{post.title}</h3><p>{post.excerpt}</p><b>Keep reading →</b></Link>)}</div>
+        <div className="post-list">{posts.map(post=><Link className="post-card" href={`/blog/${post.slug}`} key={post.slug}><div className="post-copy"><span>{post.publishedAt}</span><h3>{post.title}</h3><p>{post.excerpt}</p><b>Keep reading →</b></div>{post.cover&&<div className="post-image"><img src={`${base}${post.cover}`} alt=""/></div>}</Link>)}</div>
       </div>
     </section>
 

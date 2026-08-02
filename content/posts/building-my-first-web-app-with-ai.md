@@ -4,7 +4,7 @@ slug: building-my-first-web-app-with-ai
 excerpt: A small experiment in making a place of my own on the internet—and learning in public as I go.
 publishedAt: 2026-08-01
 published: true
-cover: /images/erica-profile.jpeg
+cover: /images/blog-ai.jpg
 ---
 
 I have always loved getting to know what other people are up to and what they are working on. I enjoy creating things myself, too, but I haven’t always had one place where I could share all of it.
