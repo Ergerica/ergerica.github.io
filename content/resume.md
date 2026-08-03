@@ -8,10 +8,12 @@ skills:
   - HTML & CSS
   - Technical Writing
 certifications:
-  - name: Azure Developer Associate (AZ-204)
+  - name: "Microsoft Certified: Azure Developer Associate"
+    issuer: Microsoft
+    credentialId: 79019236ADE0ADE2
+    credentialUrl: https://learn.microsoft.com/api/credentials/share/en-us/EricaRoss-3687/79019236ADE0ADE2?sharingId=F66718A28368EAF8
   - name: "Microsoft Certified: Azure AI Fundamentals"
     issuer: Microsoft
-    issued: September 2025
     credentialId: 8E049E7861F95A55
     credentialUrl: https://learn.microsoft.com/api/credentials/share/en-us/EricaRoss-2729/8E049E7861F95A55?sharingId=B6721F6847573AFB
 experience:
