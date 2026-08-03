@@ -8,8 +8,12 @@ skills:
   - HTML & CSS
   - Technical Writing
 certifications:
-  - Azure Developer Associate (AZ-204)
-  - Azure Data Fundamentals (DP-900)
+  - name: Azure Developer Associate (AZ-204)
+  - name: "Microsoft Certified: Azure AI Fundamentals"
+    issuer: Microsoft
+    issued: September 2025
+    credentialId: 8E049E7861F95A55
+    credentialUrl: https://learn.microsoft.com/api/credentials/share/en-us/EricaRoss-2729/8E049E7861F95A55?sharingId=B6721F6847573AFB
 experience:
   - role: Azure Support Engineer
     company: Microsoft

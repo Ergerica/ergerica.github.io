@@ -2,7 +2,8 @@ import fs from "node:fs";
 import path from "node:path";
 import matter from "gray-matter";
 
-export type Resume = { summary:string; skills:string[]; certifications:string[]; experience:{role:string;company:string;dates:string;highlights:string[]}[] };
+export type Certification = { name:string; issuer?:string; issued?:string; credentialId?:string; credentialUrl?:string };
+export type Resume = { summary:string; skills:string[]; certifications:Certification[]; experience:{role:string;company:string;dates:string;highlights:string[]}[] };
 export type Post = { title:string; slug:string; excerpt:string; body:string; publishedAt:string; published:boolean; cover?:string };
 export type HomeContent = { name:string; greeting:string; roles:string[]; image:string; imageAlt:string; imageCaption:string; aboutLabel:string; aboutTitle:string; body:string };
 
