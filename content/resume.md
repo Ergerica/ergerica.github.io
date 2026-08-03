@@ -38,4 +38,4 @@ experience:
       - Collaborated on creative teaching methods that increased student interest and engagement.
 ---
 
-I like a lot of things—technology, making, learning, and seeing what other people are excited about. I’m happiest when I’m exploring an idea, figuring out how something works, or building something I didn’t know how to make before.
+I'm always curious about technology , in all of its areas. I love creating, learning and seeing what others are tinkering with and are excited about. My favorite part is making something work and I believe that us as human beings always have the potential to do more. With this blog, I share with you what I'm working on and what has me intrigued.
