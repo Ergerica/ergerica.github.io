@@ -33,7 +33,7 @@ export default function Home() {
       </div>
     </section>
 
-    <section className="section" id="experience"><div className="section-label">Work, so far</div><div><h2>Places I’ve<br/>worked in.</h2><div className="timeline">{resume.experience.map(job=><article className="job" key={`${job.company}-${job.role}`}><div className="job-top"><div><h3>{job.role}</h3><p className="company">{job.company}</p></div><time>{job.dates}</time></div><ul>{job.highlights.map(item=><li key={item}>{item}</li>)}</ul></article>)}</div></div></section>
+    <section className="section" id="experience"><div className="section-label">Work, so far</div><div><h2>Places I’ve<br/>worked at.</h2><div className="timeline">{resume.experience.map(job=><article className="job" key={`${job.company}-${job.role}`}><div className="job-top"><div><h3>{job.role}</h3><p className="company">{job.company}</p></div><time>{job.dates}</time></div><ul>{job.highlights.map(item=><li key={item}>{item}</li>)}</ul></article>)}</div></div></section>
 
     <section className="section education"><div className="section-label">The toolkit</div><div><h2>Things I know<br/>and keep learning.</h2><div className="skill-cloud light">{resume.skills.map(skill=><span key={skill}>{skill}</span>)}</div><div className="credentials">{resume.certifications.map(cert=><div key={cert.name}><span>Certified</span><strong>{cert.name}</strong>{cert.issuer&&<p>{cert.issuer}{cert.issued&&<> · Issued {cert.issued}</>}</p>}{cert.credentialId&&<small>Credential ID {cert.credentialId}</small>}{cert.credentialUrl&&<a href={cert.credentialUrl} target="_blank" rel="noreferrer">Show credential ↗</a>}</div>)}</div></div></section>
 
