@@ -38,4 +38,3 @@ experience:
       - Collaborated on creative teaching methods that increased student interest and engagement.
 ---
 
-I love exploring different areas within tech. I love creating, learning and seeing what others are tinkering with and are excited about. I love figuring out how something works and I believe that us as human beings always have the potential to do more. With this blog, I share with you what I'm working on and what has me intrigued.
