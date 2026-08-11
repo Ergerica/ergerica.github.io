@@ -11,4 +11,4 @@ aboutLabel: A little about me
 aboutTitle: I’m curious about a lot of things.
 ---
 
-I enjoy exploring different areas within tech. I love making something work, whether I’m fixing it or building it. I have a huge sweet tooth 🍰. With this blog, I share with you what I’m working on and what has me intrigued.
+I enjoy exploring different areas within tech. I love making something work, whether I’m fixing it or building it. I have a huge sweet tooth 🍰 and I enjoy expanding my tastebuds. With this blog, I share with you what I’m working on and what has me intrigued. 
