@@ -46,6 +46,7 @@ When I push an update to these files in GitHub, the site rebuilds and publishes 
 ## 3. Building the app
 
 Once the general request was established, I shared my résumé, About Me text, and color choices with Codex.
+Since the general ask was already established, I shared with codex my resume, about me , colors.  And most importantly, the way that I want to be able to upload blogs which is through .md files.  
 
 I asked Codex what stack my app uses. Here is what it told me:
 
@@ -64,6 +65,8 @@ I asked Codex what stack my app uses. Here is what it told me:
 *This part in quotes was written by AI.*
 
 ## 4. Unexpected behavior
+
+One unexpected behavior I rant into to while creating this page is that when running locally the application looked like what I expected yet when the app was deployed through GitHub actions. It only had the html no css
 
 ## 5. Publishing
 
